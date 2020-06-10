@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<AWD>
+	<TASK><![CDATA[
+		<createInstances xmlns="https://www.dsttechnologies.com/awd/rest/v1">
+			<createInstance>
+				<LOCK>FALSE</LOCK>
+				<businessAreaName>SLSCOMP</businessAreaName>
+				<typeName>MISC</typeName>
+				<statusName>CREATED</statusName>
+				<fieldValues>
+					<fieldValue name="IDFY">											
+					<!- Value is not more than 75 characters ->
+						<value>MANIKANNAN ARUMUGAM IS WORKING IN AWD PROJECT NATIONWIDE PROJECT FOR ONE YEAR</value>
+					</fieldValue>
+					<fieldValue name="EMAL">
+					<!- Value is not more than 75 characters ->
+						<value>MANISHA IS WORKING IN BADEC RULE PROJECT</value>
+					</fieldValue>
+					<fieldValue name="SRCE">
+					<!- Value is not more than 75 characters ->
+						<value>JANISHA IS WORKING IN LOB TRUNCATE PROJECT</value>
+					</fieldValue>
+				</fieldValues>
+				<createRelationships>
+					<createRelationshipIds>DocVault.txt</createRelationshipIds>
+				</createRelationships>
+			</createInstance>
+			<createSourceInstance relationshipID="DocVault.txt">
+				<businessAreaName>POWERSPORT</businessAreaName>
+				<typeName>IMAGE</typeName>
+				<fieldValues>
+					<fieldValue name="GUID">
+					<!- Value is not more than 75 characters ->
+						<value>SUDHA IS WORKING IN HOME PROJECT</value>
+					</fieldValue>
+					<fieldValue name="CLTS">
+					<!- Value is not more than 75 characters ->
+						<value>SELVI IS WORKING IN CLIENT PROJECT</value>
+					</fieldValue>
+					
+					<fieldValue name="FNET">
+					<!- Dont change the values in hte portion!->
+						<value>AWF{HFDSFH97432NJFVDJ0980247N093724JHDFJDSPLJFPSD0983-48-2HJFDS08}</value>
+					</fieldValue>
+				</fieldValues>
+			</createSourceInstance>
+			</createInstances>
+		]]>
+	</TASK>
+	<XSOURCE><![CDATA[
+		<establishElectronicDocumentRequest>
+			<documentDetail>
+				<name>EmailBody.txt</name>
+				<externalRefeence>AWF{DSGFDSGDFHGHKKPO[OOTRYERHGFMJHJ8674ETDGBNGFHKHJLIULLJK]}
+				</externalRefeence>
+			</documentDetail>
+			<propertyInfo>
+				<kind>
+				<!- Value is not more than 75 characters ->
+					<theValue>AWD</theValue>
+				</kind>
+			</propertyInfo>
+		</establishElectronicDocumentRequest>
+	]]></XSOURCE>
+</AWD>

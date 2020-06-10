@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<AWD>
+	<TASK><![CDATA[
+		<createInstances xmlns="https://www.dsttechnologies.com/awd/rest/v1">
+			<createInstance>
+				<LOCK>FALSE</LOCK>
+				<businessAreaName>SLSCOMP</businessAreaName>
+				<typeName>MISC</typeName>
+				<statusName>CREATED</statusName>
+				<fieldValues>
+					<fieldValue name="IDFY">
+						<value>MANIKANNAN ARUMUGAM IS WORKING IN DOCVAULT PROJECT ASFDASD SDGDFGDFG SFGDSFDSF SDFDSFDS VDFDSFDSF</value>
+					</fieldValue>
+					<fieldValue name="EMAL">
+						<value>MANISHA IS WORKING IN BADEC RULE PROJECTFASDFAS DFGDFGDF GDFGDFGDFGDF SDFDSFSDF SDFDSFSDFG DGDFGDS </value>
+					</fieldValue>
+					<fieldValue name="SRCE">
+						<value>JANISHA IS WORKING IN LOB TRUNCATE PROJECT FDSFDSFDSF SDFDSFDS DGDGDSG DGDFGDFG DSGDSG DGDFGDFGB </value>
+					</fieldValue>
+				</fieldValues>
+				<createRelationships>
+					<createRelationshipIds>DocVault.txt</createRelationshipIds>
+				</createRelationships>
+			</createInstance>
+			<createSourceInstance relationshipID="DocVault.txt">
+				<businessAreaName>POWERSPORT</businessAreaName>
+				<typeName>IMAGE</typeName>
+				<fieldValues>
+					<fieldValue name="GUID">
+						<value>SUDHA IS WORKING IN HOME PROJECT SDGFDSGFDSFGFH VNHKJTYJUTHBDCVB WEREWREWRBVC HGFDGDFGDFG</value>
+					</fieldValue>
+					<fieldValue name="FNET">
+						<value>AWF{HFDSFH97432NJFVDJ0980247N093724JHDFJDSPLJFPSD0983-48-2HJFDS08}</value>
+					</fieldValue>
+				</fieldValues>
+			</createSourceInstance>
+			</createInstances>
+		]]>
+	</TASK>
+	<SOURCE><![CDATA[
+		<establishElectronicDocumentRequest>
+			<documentDetail>
+				<name>EmailBody.txt</name>
+				<externalRefeence>AWF{DSGFDSGDFHGHKKPO[OOTRYERHGFMJHJ8674ETDGBNGFHKHJLIULLJK]}
+				</externalRefeence>
+			</documentDetail>
+			<propertyInfo>
+				<kind>
+					<theValue>AWD</theValue>
+				</kind>
+			</propertyInfo>
+		</establishElectronicDocumentRequest>
+	]]></SOURCE>
+</AWD>
