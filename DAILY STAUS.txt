@@ -1,0 +1,220 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 11
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+INCIDENTS
+
+[Oct 11, 2020 21:28:41]- Fatal: The maximum number of consecutive file errors (100) has been reached, going to sleep.
+[Oct 11, 2020 21:28:41]- Fatal: The program will sleep here until it is manually terminated due to error in processing \\ohlewnas0220\awd_input_prod\AWFUL1598\staging\20201011_193052403_ecif_awd_20201011_192010_AddressCleansing_800.xml
+
+[Oct 11, 2020 22:20:49]- Fatal: The maximum number of consecutive file errors (200) has been reached, going to sleep.
+[Oct 11, 2020 22:20:49]- Fatal: The program will sleep here until it is manually terminated due to error in processing \\OHLEWNAS0220\awd_input_prod\AWFUL1599\staging\20201009_190950_UPDATEAGNO_4258.xml
+
+---------
+20201009_123451607_1009121914_PLPROCES_142_InboundEmail_PLPROCES_2
+20201009_150340248_1009145034_PLPROCES_197_InboundEmail_PLPROCES_2
+20201009_150344202_1009145009_PLPROCES_147_InboundEmail_PLPROCES_2
+20201009_170719682_1009162730_PLPROCES_10_InboundEmail_PLPROCES_2
+20201009_171932269_1009171419_PLPROCES_69_InboundEmail_PLPROCES_2
+20201009_193139373_1009192315_PLPROCES_41_InboundEmail_PLPROCES_2
+
+20201009_130110_PCUW NRAT Branded VIN_10.2020_UW_ECScreening_2 t0 1395(around 1395/1874 )
+
+
+20201009_010149_fn-awd-20201008-130042_siva
+20201009_010151_fn-awd-20201008-131556_siva
+20201009_010151_fn-awd-20201008-173205_siva
+20201009_070014_fn-csr-void-20201009-055906
+20201009_100108_fn-awd-20201009-091430
+20201009_150103_fn-awd-20201009-143105
+20201010_070030_fn-csr-void-20201010-055905
+20201011_070032_fn-csr-void-20201011-055905
+---------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 12
+-------------------------------------------------------------------------------------------------------------------------------------------------
+20201012_083036612_1012082429_ALSMKTG_123_InboundEmailMktg_2
+20201012_152323054_1012151400_PLPROCES_187_InboundEmail_PLPROCES_2
+20201012_181913262_1012180350_PLPROCES_92_InboundEmail_PLPROCES_2
+
+20201012_070035_fn-csr-void-20201012-055901
+20201012_140050_fn-awd-20201012-132041
+20201012_190114_fn-awd-20201012-185213
+-----
+TotalRow	TotalRow2	4627
+----
+STP CARD
+Form name: STPMORTC
+js file : STPIpMortc.js
+---
+DB CHECK ISSUES IN PRODUCTION - INCIDENTS ME AND SIVARAM HANDLE 
+
+Oct 13, 2020 07:00:15  DEBUG com.nationwide.apps.Dbchecker.handlers.DataBaseHealthCheckProcess -> SUCCESS: Result from query execution matched the expected result
+Oct 13, 2020 07:00:15  DEBUG com.nationwide.apps.Dbchecker.handlers.DataBaseHealthCheckProcess -> result of the executed query 'SELECT CASE WHEN COUNT(*) > 0 THEN 'DIMENSIONAL IS CURRENT' ELSE 'DIMENSIONAL IS BEHIND' END   from awdbiown.MNT001 where WORKITEM_KEY>TO_CHAR(SYSDATE - .2, 'YYYY-MM-DD-HH24.MI.SS')   ' =DIMENSIONAL IS BEHIND
+Oct 13, 2020 07:00:15  ERROR com.nationwide.apps.Dbchecker.handlers.DataBaseHealthCheckProcess -> ERROR : Result from query execution did not match the expected result.  Expected result =DIMENSIONAL IS CURRENT  resultFromQueryExecution=DIMENSIONAL IS BEHIND
+Oct 13, 2020 07:00:15  DEBUG com.nationwide.apps.Dbchecker.handlers.DataBaseHealthCheckProcess -> result of the executed query 'SELECT CASE WHEN EXTRACT(DAY FROM (Active_Timestamp-Start_timestamp)) *24 * 60 + EXTRACT(HOUR FROM (Active_Timestamp-Start_timestamp)) * 60 + EXTRACT(MINUTE FROM (Active_Timestamp-Start_timestamp)) < 120 THEN 'WA2 IS FINE' ELSE 'WA2 PURGE RAN LONGER THAN EXPECTED' END FROM awdown.wq3u999s WHERE batch_process='ACBL0206' ' =WA2 IS FINE
+
+STP TASK - 4657 work items
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 13
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20201013_070029_fn-csr-void-20201013-055900
+20201013_150043_fn-awd-20201013-141603
+20201013_170046_fn-awd-20201013-163136
+20201013_170047_fn-awd-20201013-160122
+20201013_190116_fn-awd-20201013-183207
+
+20201013_125045282_1013124040_PLPROCES_51_InboundEmail_PLPROCES_2
+20201013_125216919_1013124050_PLPROCES_65_InboundEmail_PLPROCES_2
+20201013_135252291_1013133609_PLPROCES_119_InboundEmail_PLPROCES_2
+20201013_151951982_1013151422_PLPROCES_81_InboundEmail_PLPROCES_2
+20201013_183550346_1013182028_PLPROCES_11_InboundEmail_PLPROCES_2
+
+STP TASK - 1642 work items
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 14
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Around 300 files are failed  in 1598 Server, due to  filenet issues.Now  i ran alll the files and its recovered sucessfully. 
+
+20201014_133422771_1014132153_PLPROCES_55_InboundEmail_PLPROCES_2
+20201014_150342380_1014145932_PLPROCES_142_InboundEmail_PLPROCES_2
+20201014_160805986_1014154911_PLPROCES_130_InboundEmail_PLPROCES_2
+20201014_183634399_1014181703_PLPROCES_95_InboundEmail_PLPROCES_2
+
+20201014_020143_RKHO66PR-66QP_MVR_79
+20201014_020143_RKHO66PR-66QP_MVR_196
+20201014_040207_RF72P102-726G_285448_P3_P4_3
+
+[Oct 14, 2020 02:32:38]- Warn: The source node was NOT successfully sent to FileNet for file \\OHLEWNAS0220\awd_input_prod\AWFUL1599\staging\20201014_020143_RKHO66PR-66QP_MVR_79.xml with external reference AWF{91F9A59C40FA4DC0A66D9E8A6076A09A017525B3356D25F41BBEF3C7}.  The response message is <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns="http://nationwide.com/schemas/Communication/iaa7_1/Content/DocumentManagement_1"><soapenv:Body><soapenv:Fault><soapenv:Code><soapenv:Value>soapenv:Receiver</soapenv:Value></soapenv:Code><soapenv:Reason><soapenv:Text xml:lang="en">Failed to establish document</soapenv:Text></soapenv:Reason><soapenv:Detail><establishDocumentFault xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><SystemInfo><ServiceContext><consumerPartnerId>AWF</consumerPartnerId></ServiceContext><ReturnInfo><returnSeverity>Error</returnSeverity><returnSourceCategory>Provider</returnSourceCategory><returnSource>ContentAccess</returnSource><commonReturnCode>CA-CT-FNRCE0064</commonReturnCode><commonReturnMessage>Exception</commonReturnMessage><providerReturnInfo><providerReturnSeverity>Error</providerReturnSeverity><providerReturnSource>Content Access</providerReturnSource><providerReturnCode>CA-CT-FNRCE0064</providerReturnCode><providerReturnMessage>The query was stopped because the time limit was exceeded. Message was: CORBA NO_RESPONSE 0x4942fb01 Maybe; nested exception is: 
+org.omg.CORBA.NO_RESPONSE: Request 82044202 timed out  vmcid: IBM  minor code: B01 completed: Maybe</providerReturnMessage></providerReturnInfo></ReturnInfo></SystemInfo></establishDocumentFault></soapenv:Detail></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+[Oct 14, 2020 02:32:39]- Info: The source node was successfully sent to FileNet for file \\OHLEWNAS0220\awd_input_prod\AWFUL1599\staging\20201014_020143_RKHO66PR-66QP_MVR_118.xml with external reference AWF{05311D9347EB4BFC91AEB83848D268D7017525B3356E663135995029}
+
+
+20201014_130049_fn-awd-20201014-123927
+20201014_140055_fn-awd-20201014-135441
+20201014_160156_fn-awd-20201014-152509
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 15
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20201015_134848479_1015133502_PLPROCES_136_InboundEmail_PLPROCES_2
+20201015_180348574_1015175143_PLPROCES_177_InboundEmail_PLPROCES_2
+20201015_184920751_1015184501_PLPROCES_31_InboundEmail_PLPROCES_2
+20201015_184936808_1015184547_PLPROCES_119_InboundEmail_PLPROCES_2
+20201015_201556720_1015201314_PLPROCES_44_InboundEmail_PLPROCES_2
+
+20201015_070041_fn-csr-void-20201015-055903
+20201015_110050_fn-awd-20201015-104450
+20201015_130041_fn-awd-20201015-123020
+20201015_140037_fn-awd-20201015-134535
+20201015_170041_fn-awd-20201015-161619
+
+AWD-1376 - AWDOWN password in Training expiring on 10/20/2020 - Is InProgress.
+AWD-1377 - AWFDEV password in Training expiring on 10/20/2020 - Is InProgress.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 19
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Yesterday,Worked on STP issues  - Due to release activity the STP is having an issues.
+
+We could not able to complete the workitems in STP. Around 1300 work items processed because its runs few boxes only .
+
+So we are continously working on this issue .
+
+STP CARD ISSUES  - DUE TO STP ISSUE.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 27
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20201023_131727605_1023130829_PLPROCES_70_InboundEmail_PLPROCES_2
+20201023_131858148_1023130833_PLPROCES_78_InboundEmail_PLPROCES_2
+20201023_173332439_1023171755_PLPROCES_86_InboundEmail_PLPROCES_2
+20201026_094538415_CLAIMSC20201026093705-54864300-30_CAPTIVA_1
+20201026_135351496_CLAIMSC20201026134622-40904802-7_CAPTIVA_1
+20201026_150058418_1026144513_ICMADMIN_2_InboundEmailMktg_2
+20201026_150439713_1026145325_PLPROCES_124_InboundEmail_PLPROCES_2
+20201026_155100541_1026154421_PLPROCES_157_InboundEmail_PLPROCES_2
+20201026_155221606_1026154420_PLPROCES_154_InboundEmail_PLPROCES_2
+20201026_181649714_1026181206_PLPROCES_126_InboundEmail_PLPROCES_2
+
+20201023_070029_fn-csr-void-20201023-055901
+20201023_150040_fn-awd-20201023-143106
+20201023_180031_fn-awd-20201023-174655
+20201024_070026_fn-csr-void-20201024-055906
+20201025_090030_fn-csr-void-20201025-084708
+20201026_070039_fn-csr-void-20201026-055903
+20201026_120040_fn-awd-20201026-110711
+20201026_160054_fn-awd-20201026-151426
+20201026_180044_fn-awd-20201026-175418
+20201026_190128_fn-awd-20201026-182431
+
+TotalRow	TotalRow2	1980
+
+IPROPERTY -IPROMPROTC
+
+INCIDENTS  : 8
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 28
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20201027_132441911_1027131346_PLPROCES_141_InboundEmail_PLPROCES_2
+20201027_132441911_1027131346_PLPROCES_141_InboundEmail_PLPROCES_2
+20201027_140107734_CLAIMSC20201027134825-35471504-7_CAPTIVA_1
+20201027_141940175_CLAIMSC20201027140546-35278505-7_CAPTIVA_1
+20201027_142112719_1027140325_PLPROCES_46_InboundEmail_PLPROCES_2
+20201027_154522082_1027154157_ALSMKTG_127_InboundEmailMktg_2
+20201027_173408378_1027172528_PLPROCES_78_InboundEmail_PLPROCES_2
+20201027_190011888_1027185804_HARLEYLP_4_InboundEmailMktg_2
+20201027_203229946_1027201827_PLPROCES_48_InboundEmail_PLPROCES_2
+
+20201027_070053_fn-csr-void-20201027-055901
+20201027_160118_fn-awd-20201027-152930
+20201028_080050_fn-csr-void-20201028-074515
+
+
+TotalRow	TotalRow2	1390 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 29
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1598
+
+20201028_011508370_PASD0100.ECIF.AWD.D102720_AddressCleansing_1
+20201028_114545993_1028113735_ALSMKTG_122_InboundEmailMktg_2
+20201028_133342385_1028131858_PLPROCES_83_InboundEmail_PLPROCES_2
+20201028_160731399_1028154853_PLPROCES_155_InboundEmail_PLPROCES_2
+20201028_164516953_1028163710_ALSMKTG_129_InboundEmailMktg_2
+20201028_200318375_1028195039_ALSMKTG_895_InboundEmailMktg_2
+20201028_200326873_1028195027_ALSMKTG_778_InboundEmailMktg_2
+
+1599
+
+20201028_090054_T616-RQ00-HOMCARE-AWD_ALPSHV_24
+20201028_090114_ECAU Dwelling Fire Project for Legacy SPCPRJ_AU - 10-26-20 nonNRAT - list 2 reload_UW_ECScreening_2 
+20201028_090114_ECAU Dwelling Fire Project for Legacy SPCPRJ_AU - 10-26-20 nonNRAT - list 2 reload_UW_ECScreening_30
+
+INC01994595
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2020 October 30
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Friday 
+=======
+Worked on recovery Files Processed.
+Worked on  STP Task.
+Worked on multiple incidents.
+AWD-1203 - AWDBI in Dev password expiring - Succussfully completed
+AWD-1346 - *STP* Iproperty- Ipromortc. file new image viewer opening after stopping due to a long running script, PC and GM positioning issue. Working on this defects.
+
+Today 
+=======
+
+Worked on STP Task.
+Worked on  multiple incidents.
+AWD-1346 - *STP* Iproperty- Ipromortc. file new image viewer opening after stopping due to a long running script, PC and GM positioning issue. Working on this defects.
+With help of devaraj we did the code change as of now testing that defects.
+
+INC02018082
+
+•	Processed recovery Files.
+•	Worked on multiple incidents.
+•	STP status- 3183 items pending. Refunds is running. Please take care of STP.
+•	AWD#1344-Nwfeedreader needs code change to handle net use I: removal from .bat file- Analysis is in progress
